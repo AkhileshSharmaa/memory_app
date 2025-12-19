@@ -13,7 +13,7 @@
     <artifactId>memory_app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>memory_app</name>
-    <description>Spring Boot AI project with Google Gemini and Ollama</description>
+    <description>Spring Boot AI project with Google Gemini</description>
     <url/>
     <licenses>
         <license/>

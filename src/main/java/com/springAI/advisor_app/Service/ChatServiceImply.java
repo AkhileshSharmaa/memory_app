@@ -1,6 +1,5 @@
 package com.springAI.advisor_app.Service;
 
-import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
@@ -31,7 +30,6 @@ public class ChatServiceImply implements ChatService {
         return this.chatClient
                 .prompt()
                 .advisors(advisorSpec -> advisorSpec.param(ChatMemory.CONVERSATION_ID, userId))
-//                .advisors(new SimpleLoggerAdvisor())
                 .system(system   ->
                         system.text(this.systemMessage))
                 .user(user ->
@@ -49,7 +47,5 @@ public class ChatServiceImply implements ChatService {
                 .stream()
                 .content();
     }
-
-
 }
 

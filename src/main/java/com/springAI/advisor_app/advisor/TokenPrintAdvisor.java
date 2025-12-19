@@ -1,6 +1,5 @@
 package com.springAI.advisor_app.advisor;
 
-import okhttp3.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClientRequest;
